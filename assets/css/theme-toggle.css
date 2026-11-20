@@ -1,0 +1,187 @@
+/*=====================================================
+  Light / dark toggle + HealthBoost detail section
+  Loaded AFTER diary-pink.css. Light mode = original look.
+  Dark mode = same diary aesthetic in plum + rose tones.
+=====================================================*/
+
+/* ---------- toggle button ---------- */
+.theme-toggle{
+  position:fixed;left:18px;bottom:18px;z-index:9999;
+  width:46px;height:46px;border-radius:50%;
+  background:var(--white);color:var(--rose-deep);
+  border:1.5px solid var(--rose-deep);
+  box-shadow:0 8px 20px rgba(168,105,122,.25);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;line-height:1;cursor:pointer;padding:0;
+  transition:transform .3s,background .3s;
+}
+.theme-toggle:hover{transform:translateY(-2px) rotate(-8deg);background:var(--blush);}
+.theme-toggle .fa-sun{display:none;}
+[data-theme="dark"] .theme-toggle .fa-moon{display:none;}
+[data-theme="dark"] .theme-toggle .fa-sun{display:inline-block;}
+
+/* smooth switch */
+body,.header-area,.hero-content,.service-single-box,.experience-single-box,.single-skills-box,
+.contact-single-box,.testimonial-single-box,.single-blgo-box,.skill-list,.chip-list li,
+.about-area,.service-area,.experience-area,.skills-area,.protfolio-area,.impact-area,.testimonial-area,
+.blog-area,.contact-area,.defines-area,.academic-area,.creative-area,.healthboost-area,.form_box input,.form_box textarea{
+  transition:background-color .35s ease,color .35s ease,border-color .35s ease;
+}
+
+/* ---------- HealthBoost detail ---------- */
+.case-study-caption a,.project-caption h3 a{color:inherit;}
+.project-caption h3 a:hover{color:var(--rose-deep);}
+.project-more{display:inline-block;margin-top:8px;font-family:var(--script);font-size:21px;color:var(--rose-deep);}
+.project-more:hover{color:var(--ink);}
+.healthboost-area{background:var(--blush);padding:100px 0 100px;position:relative;scroll-margin-top:70px;}
+.healthboost-area:before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background-image:var(--gingham);background-size:14px 14px;opacity:.9;}
+.healthboost-area .section-main-title h1{font-size:46px;margin-bottom:18px;}
+.hb-photo{max-width:560px;margin:0 auto 40px;transform:rotate(-1.6deg);}
+.hb-photo img{aspect-ratio:3/2;}
+.healthboost-area .hero-button a{margin-top:22px;}
+@media (min-width:992px){.hb-photo{margin-bottom:0;}}
+@media (max-width:575px){.healthboost-area .section-main-title h1{font-size:34px;}.hb-photo{transform:none;}}
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --white:#2b222b;      /* cards / base */
+  --paper:#201820;      /* alternate sections */
+  --blush:#3a2a36;
+  --rose:#6e4659;       /* borders & soft accents */
+  --stone:#43363d;
+  --ink:#f6e9ee;
+  --rose-deep:#efb4c5;  /* pink accent text */
+  --gingham:
+    linear-gradient(90deg,rgba(110,70,89,.5) 50%,transparent 50%),
+    linear-gradient(rgba(110,70,89,.5) 50%,transparent 50%);
+}
+[data-theme="dark"] body{background:var(--paper);}
+[data-theme="dark"] p,
+[data-theme="dark"] .hero-description p,
+[data-theme="dark"] .service-description p,
+[data-theme="dark"] .expereince-description p,
+[data-theme="dark"] .skills-description p,
+[data-theme="dark"] .contact-intro p,
+[data-theme="dark"] .contact-text p,
+[data-theme="dark"] .service-single-box:hover .service-description p{color:#d6c7ce;}
+
+/* translucent white layers -> translucent plum */
+[data-theme="dark"] .hero-area:before{background:radial-gradient(60% 60% at 50% 40%,rgba(239,180,197,.10),rgba(239,180,197,0) 75%);}
+[data-theme="dark"] .hero-content{background:rgba(43,34,43,.86);}
+[data-theme="dark"] .logo-wordmark{background:rgba(43,34,43,.92);}
+[data-theme="dark"] .copy-widget-text p{background:rgba(43,34,43,.92);}
+
+/* shadows: softer, darker */
+[data-theme="dark"] .service-single-box,[data-theme="dark"] .experience-single-box,
+[data-theme="dark"] .single-skills-box,[data-theme="dark"] .contact-single-box,
+[data-theme="dark"] .testimonial-single-box,[data-theme="dark"] .single-blgo-box,
+[data-theme="dark"] .creative-note{box-shadow:0 8px 22px rgba(0,0,0,.35);}
+[data-theme="dark"] .theme-toggle{box-shadow:0 8px 20px rgba(0,0,0,.5);}
+
+/* polaroids & scrapbook cards stay cream, like real printed photos */
+[data-theme="dark"] .polaroid,[data-theme="dark"] .polaroid-mini,[data-theme="dark"] .hero-photo,
+[data-theme="dark"] .about-thumb,[data-theme="dark"] .case-study-single-box{
+  --white:#fbf4f6;--ink:#393633;--rose-deep:#a8697a;--rose:#ebcbd2;--stone:#e8e6e3;--blush:#f8e4e8;
+  color:#393633;box-shadow:0 14px 32px rgba(0,0,0,.45);
+}
+[data-theme="dark"] .polaroid p,[data-theme="dark"] .case-study-single-box p,
+[data-theme="dark"] .project-caption p{color:#5a5550;}
+
+/* rating dots */
+[data-theme="dark"] .skill-dots i{background:radial-gradient(circle at 35% 30%,#6b5a64,#3d3238 70%);border-color:#4f4048;}
+[data-theme="dark"] .skill-dots i.on{background:radial-gradient(circle at 35% 30%,#fff,#efb4c5 65%,#d9aeb8);border-color:#efb4c5;}
+
+/* forms */
+[data-theme="dark"] .form_box input::placeholder,[data-theme="dark"] .form_box textarea::placeholder{color:#a8999f;}
+[data-theme="dark"] .form_box input:focus,[data-theme="dark"] .form_box textarea:focus{box-shadow:0 0 0 3px rgba(239,180,197,.22);}
+
+/* photos a touch calmer on dark */
+[data-theme="dark"] .blog-thumb img,[data-theme="dark"] .about-thumb>img,[data-theme="dark"] .meet-video-card img{filter:brightness(.94);}
+
+/* misc */
+[data-theme="dark"] .contact-form-button button,[data-theme="dark"] .hero-button a{color:var(--ink)!important;}
+[data-theme="dark"] .hero-button a:hover,[data-theme="dark"] .contact-form-button button:hover{background:var(--blush);}
+[data-theme="dark"] .mean-container .mean-bar::before{color:var(--ink);}
+[data-theme="dark"] *::selection{background:var(--rose);color:var(--ink);}
+[data-theme="dark"] .meet-play{background:rgba(251,244,246,.93);color:#a8697a;}
+
+/* HealthBoost card: keep serif title + undistorted round logo */
+.project-caption h3 a{font-family:inherit;font-weight:inherit;font-size:inherit;line-height:inherit;}
+.case-study-thumb.logo-thumb img{aspect-ratio:1/1;object-fit:contain;width:auto;height:72%;max-width:80%;}
+
+/* =====================================================
+   Controls stack (language + theme)
+===================================================== */
+.site-controls{position:fixed;left:18px;bottom:18px;z-index:9999;display:flex;flex-direction:column;align-items:flex-start;gap:10px;}
+.site-controls .theme-toggle{position:static;}
+.lang-toggle{display:flex;align-items:center;gap:2px;padding:4px 6px 4px 12px;background:var(--white);border:1.5px solid var(--rose-deep);border-radius:30px;box-shadow:0 8px 20px rgba(168,105,122,.25);}
+[data-theme="dark"] .lang-toggle{box-shadow:0 8px 20px rgba(0,0,0,.5);}
+.lang-toggle i{color:var(--rose-deep);font-size:14px;margin-right:6px;}
+.lang-toggle button{border:0;background:transparent;color:var(--ink);font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:1px;line-height:1;padding:8px 11px;border-radius:20px;cursor:pointer;transition:background .25s;}
+.lang-toggle button:hover{background:var(--blush);}
+.lang-toggle button[aria-pressed="true"]{background:var(--rose);color:var(--ink);}
+
+/* =====================================================
+   Get to know me — video
+===================================================== */
+.meet-area{padding:90px 0 120px;background:var(--white);}
+.meet-intro{max-width:640px;margin:10px auto 0;}
+.meet-stage{position:relative;max-width:900px;margin:54px auto 0;}
+.meet-video-frame{position:relative;margin:0;background:var(--white);padding:14px;border:1px solid var(--stone);box-shadow:0 18px 40px rgba(57,54,51,.18);transform:rotate(-1deg);}
+.meet-video-frame:before{content:"";position:absolute;top:-15px;left:50%;width:110px;height:30px;margin-left:-55px;z-index:3;background-color:rgba(235,203,210,.9);background-image:var(--gingham);background-size:12px 12px;transform:rotate(-3deg);box-shadow:0 1px 3px rgba(0,0,0,.1);}
+.meet-video-frame video{display:block;width:100%;aspect-ratio:16/9;background:#1b1519;object-fit:cover;}
+.meet-sound{position:absolute;z-index:4;top:28px;right:28px;width:48px;height:48px;border-radius:50%;border:1.5px solid #a8697a;background:rgba(251,244,246,.94);color:#a8697a;font-size:19px;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;box-shadow:0 6px 16px rgba(0,0,0,.25);transition:transform .25s;animation:soundPulse 2.4s ease-in-out infinite;}
+.meet-sound:hover{transform:scale(1.08);}
+.meet-sound .fa-volume-up{display:none;}
+.meet-video-frame.sound-on .meet-sound{animation:none;}
+.meet-video-frame.sound-on .fa-volume-mute{display:none;}
+.meet-video-frame.sound-on .fa-volume-up{display:inline-block;}
+.meet-hint{position:absolute;z-index:4;top:86px;right:20px;max-width:230px;padding:6px 14px;border-radius:16px;background:rgba(57,54,51,.88);color:#fff;font-family:var(--sans);font-size:12.5px;line-height:1.4;text-align:center;box-shadow:0 6px 16px rgba(0,0,0,.25);}
+.meet-hint:before{content:"";position:absolute;top:-6px;right:30px;border:6px solid transparent;border-top:0;border-bottom-color:rgba(57,54,51,.88);}
+.meet-video-frame.sound-on .meet-hint{display:none;}
+.meet-mini{left:-24px;right:auto;bottom:-38px;width:26%;max-width:170px;transform:rotate(-5deg);z-index:5;}
+.meet-mini img{aspect-ratio:1/1;object-position:center 22%;}
+@keyframes soundPulse{0%,100%{box-shadow:0 6px 16px rgba(0,0,0,.25),0 0 0 0 rgba(239,180,197,.7);}50%{box-shadow:0 6px 16px rgba(0,0,0,.25),0 0 0 12px rgba(239,180,197,0);}}
+[data-theme="dark"] .meet-video-frame{--white:#fbf4f6;--ink:#393633;--rose-deep:#a8697a;--rose:#ebcbd2;--stone:#e8e6e3;box-shadow:0 14px 32px rgba(0,0,0,.45);}
+@media (max-width:767px){
+  .meet-video-frame{padding:8px;}
+  .meet-sound{top:16px;right:16px;width:42px;height:42px;font-size:17px;}
+  .meet-hint{top:66px;right:10px;max-width:180px;font-size:11.5px;}
+  .meet-mini{left:-6px;bottom:-30px;width:30%;}
+}
+
+/* =====================================================
+   Internship
+===================================================== */
+.internship-area{background:var(--blush);padding:100px 0 100px;position:relative;scroll-margin-top:70px;}
+.internship-area:before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background-image:var(--gingham);background-size:14px 14px;opacity:.9;}
+.internship-area .section-main-title h1{font-size:38px;line-height:1.15;margin-bottom:18px;}
+.intern-card{margin-bottom:40px;padding:54px 32px 22px;}
+.intern-icon{width:58px;height:58px;border-radius:50%;background:var(--blush);border:1px solid var(--rose);color:var(--rose-deep);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:12px;}
+.intern-card .expereince-description p{margin-bottom:6px;}
+.intern-date{font-weight:700;color:var(--rose-deep)!important;}
+.intern-date i{margin-right:6px;}
+.intern-card .chip-list{margin-top:14px;}
+.intern-more{display:none;}
+.intern-more.open{display:block;animation:fadeInUp .4s ease;}
+.intern-toggle{margin-top:10px;font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink);background:var(--rose);border:1.5px solid var(--rose-deep);border-radius:40px;padding:12px 26px;cursor:pointer;transition:.3s;}
+.intern-toggle:hover{background:var(--white);transform:translateY(-2px);}
+.intern-toggle .t-less{display:none;}
+.intern-toggle[aria-expanded="true"] .t-more{display:none;}
+.intern-toggle[aria-expanded="true"] .t-less{display:inline;}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+@media (min-width:992px){.intern-card{margin-bottom:0;}}
+@media (max-width:575px){.internship-area .section-main-title h1{font-size:30px;}}
+
+/* Spanish versions of text that lives in CSS */
+html[lang="es"] .about-thumb:after{content:"♡ yo, en mi rinconcito";}
+.intern-toggle:focus,.intern-toggle:active{outline:0;border-color:var(--rose-deep);}
+.intern-toggle:focus-visible{outline:2px dashed var(--rose-deep);outline-offset:3px;}
+.meet-sound:focus-visible,.lang-toggle button:focus-visible{outline:2px dashed var(--rose-deep);outline-offset:3px;}
+
+/* journal teasers */
+.journal-teaser{font-size:15px;line-height:1.6;margin:10px 0 0;color:inherit;opacity:.85;}
+.blog-area .row>[class*="col-"]{margin-bottom:30px;}

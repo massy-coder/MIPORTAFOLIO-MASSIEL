@@ -1,0 +1,2374 @@
+/*===============================================
+Template Name: Cv Dreamhub HTML5 Template
+Author:  
+Description: Description
+Version: 1.0.0
+Text Domain: Prygo
+Tags:   delivery company, grid, logistics, moving, moving company, shipping, courier, shipping company, storage, transport, transport company, warehouse.
+================================================*/
+    
+/*TABLE OF CONTENTS*/
+/*=====================
+01.CV Dreamhub Header Area Css
+02. CV Dreamhub Nav Menu Area Css 
+03. CV Dreamhub Hero Area Css
+04. CV Dreamhub Section Title Css
+05. CV Dreamhub About Area Css
+06. CV Dreamhub Service Area Css
+07. CV Dreamhub Service Details Area Css
+08. CV Dreamhub Experience Area Css
+09. CV CV Dreamhub Portfolio Area Css
+10. CV CV Dreamhub Portfolio Details Area Css
+11. CV CV Dreamhub Skills Area Css
+12. CV Dreamhub Tsstimonial Area Css
+13. CV Dreamhub Contact Area Css
+14. CV Dreamhub Blog Area Css
+15. CV Dreamhub Blog Details Area Css
+16. CV Dreamhub Scrollup Section
+17. CV Dreamhub Search Popup Css
+18. CV Dreamhub Loader Css
+=======================*/
+
+
+/*=====================================
+<--  Cv Dreamhub Header Area Css -->
+=======================================*/
+.header-area {
+    position: relative;
+    border-bottom: 1px solid rgba( 35, 35, 35,0.800);
+    background: #000000;
+}
+.logo {
+    text-align: left;
+}
+/*aticky*/
+.sticky {
+    left: 0;
+    margin: auto;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+    background: #009E66!important;
+    transition: .5s;
+    z-index: 44;
+    animation: 500ms running fadeInUp;
+    animation-name: slideInDown;
+}
+a.active-sticky {
+    display: none;
+}
+.sticky a.active-sticky2{
+	display:none;
+}
+.sticky a.active-sticky{
+	display:inline-block;
+}
+/*header-menu*/
+.header-menu {
+    text-align: right;
+}
+.header-menu ul {
+    display: inline-block;
+}
+.header-menu ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+.header-menu ul li a {
+    display: inline-block;
+    padding: 35px 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*header menu button*/
+.header-menu-button {
+    display: inline-block;
+}
+.header-menu-button a {
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    background: #009D66;
+    padding: 11px 21px;
+    border: 2px solid transparent;
+    margin-left: 18px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.header-menu-button a:hover {
+    color: #009E66;
+    background: #fff;
+}
+.header-menu-button a i {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 18px;
+}
+/*sticky header menu button*/
+.sticky .header-menu-button a{
+	background:#009E66;
+	color:#fff;
+    border: 2px solid #fff;
+    transition: .5s;
+}
+.sticky .header-menu-button a:hover{
+	background:#fff;
+	color:#009E66;
+    border: 2px solid #fff;
+}
+
+
+/*<!-- ============================================================== -->
+<!-- Cv Dremhub Hero Area Css -->
+<!-- ============================================================== -->*/
+.hero-area {
+    background: url(assets/images/hero-banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 800px;
+}
+/*hreo sub title*/
+.hero-sub-title h5 {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #009e66;
+    margin-bottom: 23px;
+}
+.hero-main-title h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+    margin-left: 123px;
+    margin-bottom: 25px;
+}
+.hero-main-title h1:before {
+    position: absolute;
+    content: "";
+    left: -121px;
+    top: 60px;
+    width: 90px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #009e66;
+}
+
+.hero-description p {
+    color: #fff;
+    opacity: 0.800;
+    width: 40%;
+}
+/*hreo button*/
+.hero-button a {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    display: inline-block;
+    background: #fff;
+    padding: 18px 27px;
+    margin-top: 23px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero-button a:hover{
+    color: #009E66;
+}
+.hero-button a::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #009e66;
+    z-index: -1;
+    transition: .5s;
+  }
+.hero-button a:hover:before{
+    transform:rotateX(90deg);
+  }
+.hero-button a::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #009e66;
+    z-index: -1;
+    transition: .5s;
+  }
+  .hero-button a:hover:after{
+    transform:rotateY(90deg);
+  }
+  .hero-button a i {
+    display: inline-block;
+    margin-left: 14px;
+}
+/*section btn*/
+.section-btn {
+    position: relative;
+}
+#section09 a {
+    position: absolute;
+    left: 47%;
+    bottom: -21px;
+}
+
+#section09 a span {
+    position: absolute;
+    bottom: -100px;
+    left: 47%;
+    width: 20px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #616161;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+#section09 a span::before {
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    content: '';
+    width: 2px;
+    height: 12px;
+    margin-left: -1px;
+    background-color: #616161;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+#section09 a span::after {
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    content: '';
+    margin-left: -4px;
+    border-left: 1px solid #616161;
+    border-bottom: 1px solid #616161;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+  
+
+/*Section title*/
+.section-title.text-center {
+    margin-bottom: 55px;
+}
+.section-sub-title h4 {
+    font-size: 16px;
+    color: #009e66;
+    font-weight: 400;
+    font-family: "Oswald";
+    position: relative;
+    margin-bottom: -8px;
+}
+/*em_bar_bg*/
+.em_bar_bg {
+    width: 20px;
+    height: 2px;
+    background-color: #009e66;
+    position: relative;
+    margin: auto;
+    display: inline-block;
+}
+.em_bar_bg:before {
+    position: absolute;
+    content: "";
+    right: -30px;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+}
+.em_bar_bg:after {
+    position: absolute;
+    content: "";
+    left: -30px;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+}
+.section-main-title h1 {
+    font-size: 46px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+/*<!-- ============================================================== -->
+<!-- Cv Dreamhub About Area Css -->
+<!-- ============================================================== -->*/ 
+.about-area {
+    padding: 100px  0 133px;
+}
+/*about thumb*/
+.about-thumb{
+    position: relative;
+}
+.about-shape {
+    position: absolute;
+    bottom: -54px;
+    right: 138px;
+}
+.top-img-up-down{
+	-webkit-animation: top-image-bounce 4s infinite ease-in-out;
+     animation: top-image-bounce 4s infinite ease-in-out;
+}
+@-webkit-keyframes top-image-bounce {
+  0% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+
+  50% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes top-image-bounce {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes left-image-bounce {
+  0% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  50% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes left-image-bounce {
+  0% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  50% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+  }
+}
+
+@-webkit-keyframes ripple-white3 {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 100px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 100px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes ripple-white3 {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 100px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 100px rgba(255, 255, 255, 0);
+  }
+}
+/*ablut left*/
+.section-title.text-left .em_bar_bg {
+    margin-left: 30px;
+    display: inline-block;
+}
+.section-description p {
+    width: 90%;
+}
+.about-right {
+    position: relative;
+    margin-left: -55px;
+}
+.Information-title h2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 24px 0 27px;
+}
+.Information-about-box.right {
+    position: relative;
+    margin-left: -104px;
+}
+.Information-about-box ul li {
+    list-style: none;
+    background: #0A0A0A;
+    margin-bottom: 30px;
+    display: block;
+    width: 200px;
+    height: 36px;
+    line-height: 36px;
+    border-left: 4px solid #009D66;
+    position: relative;
+    z-index: 1;
+}
+.Information-about-box ul li:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #009E66;
+    transition: .5s;
+    z-index: -1;
+}
+.Information-about-box ul li:hover:before {
+    width: 100%;
+}
+.Information-about-box ul li p {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Oswald";
+    margin-left: 10px;
+}
+/*<!-- ============================================================== -->
+<!-- Cv Dremhub Service Area Css -->
+<!-- ============================================================== -->*/
+.service-area {
+    background: #0F0F0F;
+    padding: 98px 0 70px;
+}
+.service-single-box {
+    background: #009E66;
+    padding: 45px 55px 22px 40px;
+    position: relative;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+.service-single-box::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    z-index: -1;
+    transition: .5s;
+  }
+.service-single-box:hover:before{
+    transform:rotateX(90deg);
+  }
+.service-single-box::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    z-index: -1;
+    transition: .5s;
+ }
+.service-single-box:hover:after{
+    transform:rotateY(90deg);
+}
+
+.service-namber {
+    position: absolute;
+    right: 24px;
+    top: 46px;
+}
+.service-namber h1 {
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    -webkit-text-stroke-color: rgba(255,255,255,0.2);
+    font-size: 100px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: "Rubik";
+}
+/*servoce title*/
+.service-title h3 a {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 35px 0 26px;
+    display: inline-block;
+}
+.service-single-box:hover .service-description p{
+    color: #fff;
+}
+
+
+
+
+
+
+/*<!-- ============================================================== -->
+<!-- Cv Dreamhub Expereince Area Css -->
+<!-- ============================================================== -->*/
+.experience-area {
+    padding: 96px 0 70px;
+}
+.experience-single-box {
+    background: #0D0D0D;
+    padding: 25px 38px 7px  40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.experience-single-box .em_bar {
+    width: 99%;
+    height: 1px;
+    position: relative;
+}
+.experience-single-box .em_bar:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 20px;
+    height: 1px;
+    background-color: #009e66;
+    top: 0;
+    -webkit-animation: moveLeftBounces-two 15s linear infinite;
+    animation: moveLeftBounces-two 15s linear infinite;
+}
+@keyframes moveLeftBounces-two {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    50% {
+        -webkit-transform: translateX(530px);
+        transform: translateX(530px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+.experience-title h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 29px;
+    position: relative;
+}
+.experience-title h3:before {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: #009e66;
+}
+.expereince-date p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Oswald";
+}
+/*<!-- ============================================================== -->
+<!-- Cv Dreamhub Skills Area Css -->
+<!-- ============================================================== -->*/
+
+.skills-area {
+    padding: 98px 0 70px;
+    background: #0F0F0F;
+}
+/*skills left*/
+.skills-left-title h1 {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+/*single-skills-box*/
+.single-skills-box {
+    background: #1B1B1B;
+    padding: 27px 30px 15px;
+    margin-bottom: 30px;
+}
+.skills-title h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.skills-description p {
+    color: #ffffff;
+    margin-bottom: 13px;
+}
+
+/*em_bar*/
+.em_bar {
+    width: 220px;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    margin-bottom: 20px;
+    position: relative;
+}
+.em_bar:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 20px;
+    height: 1px;
+    background-color: #009e66;
+    top: 0;
+    -webkit-animation: moveLeftBounces-one 15s linear infinite;
+    animation: moveLeftBounces-one 15s linear infinite;
+}
+@keyframes moveLeftBounces-one {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    50% {
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+/*work date*/
+.work-date p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Oswald";
+    background: #272727;
+    display: inline-block;
+    padding: 3px 16px 3px 11px;
+    border-left: 4px solid #009e66;
+    position: relative;
+    z-index: 1;
+}
+.work-date p:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #009E66;
+    transition: .5s;
+    z-index: -1;
+}
+.work-date p:hover:before {
+    width: 100%;
+}
+/*skills right */
+.skill-right {
+    position: relative;
+    margin-left: 70px;
+}
+.skills-right-title h1 {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+/*prossess ber*/
+.prossess-ber-plugin span {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Oswald";
+}
+.barfiller {
+	position: relative;
+	margin-bottom: 34px;
+	margin-top: 4px;
+	border-radius: 5px;
+	width: 100%;
+	height: 8px;
+	background-color: #000000;
+}
+span.fill {
+    background: #009e66!important;
+}
+.barfiller .fill {
+  display: block;
+  position: relative;
+  width: 0px;
+  height: 100%;
+  background: #333;
+  z-index: 1;
+}
+.barfiller .tipWrap { display: none; }
+.barfiller .tip {
+    margin-top: -29px;
+    padding: 2px 4px;
+    left: 0px;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Oswald";
+}
+
+.stat-bar:nth-of-type(1) .stat-bar-rating {
+  animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
+}
+
+
+
+/*================================
+ <--Start Cv Dreamhun Protfolio Area Css-->
+=================================*/
+.protfolio-area {
+    padding: 98px 0 68px;
+}
+.protfolio-area .section-title.text-center {
+    margin-bottom: 26px;
+}
+/* Portfolio Nav */
+.portfolio_nav {
+    margin-bottom: 40px;
+}
+.portfolio_nav {
+    margin-bottom: 48px;
+}
+.portfolio_menu ul {
+    text-align: center;
+    list-style: none;
+}
+
+.portfolio_nav ul li {
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    margin: 6px 25px;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Oswald";
+    text-align: center;
+    color: #fff;
+}
+.portfolio_nav ul li:hover{
+    color: #009E66;
+}
+.portfolio_nav ul li:before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -9px;
+    height: 2px;
+    background: #009e66;
+    transition: .5s;
+    width: 0%;
+}
+.portfolio_nav ul li:hover:before {
+    width: 100%;
+    left: 0%;
+}
+
+/*case study thumb*/
+.case-study-single-box {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.case-study-thumb {
+    overflow: hidden;
+}
+.case-study-thumb img {
+    width: 100%;
+    transition: .5s;
+    transform: scale(1.1);
+}
+.case-study-single-box:hover .case-study-thumb img {
+    transform: scale(1.2);
+}
+
+
+
+/*<!-- ============================================================== -->
+<!-- Cv Dreamhub Testimonial Area Css -->
+<!-- ============================================================== -->*/
+.testimonial-area {
+    padding: 100px 0 146px;
+    background: #0F0F0F;
+}
+.row.testimonial_bg {
+    padding: 0 148px 0;
+}
+.testimonial-single-box {
+    background: #000000;
+    padding: 30px 140px 30px 30px;
+}
+.testimonial-thumb {
+    float: left;
+    margin-right: 42px;
+}
+.testi-icon {
+    margin-bottom: 20px;
+}
+.testi-description p {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Oswald";
+    line-height: 30px;
+}
+.testi-people-name h3 {
+    font-size: 18px;
+    font-weight: 500;
+    background: #1B1B1B;
+    display: inline-block;
+    padding: 4px 12px;
+    border-left: 2px solid #009E66;
+    margin-top: 7px;
+    position: relative;
+    z-index: 1;
+}
+.testi-people-name h3:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #009E66;
+    transition: .5s;
+    z-index: -1;
+}
+.testi-people-name h3:hover:before{
+    width: 100%;
+}
+.testi-people-name span {
+    font-weight: 300;
+    color: #009E66;
+    margin-left: 8px;
+    transition: .5s;
+}
+.testi-people-name:hover span {
+    color: #fff;
+}
+/*owl dot*/
+.owl-dots {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -52px;
+}
+.owl-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+    background-color: #4F4F4F;
+    transition: .5s;
+}
+.owl-dot.active {
+    background: #009E66;
+}
+
+
+
+
+/*<!-- ============================================================== -->
+<!-- Cv Dremhub Blog Area Css -->
+<!-- ============================================================== -->*/
+.blog-area {
+    padding: 96px 0 100px;
+}
+.blog-thumb {
+    position: relative;
+    overflow: hidden;
+}
+.blog-thumb img {
+    transition: .8s;
+    width: 100%;
+    transform: scale(1.1);
+}
+.single-blgo-box:hover .blog-thumb img {
+    transform: scale(1.2);
+}
+
+/*blog date*/
+.blog-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.blog-date p {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;
+    background: #009E66;
+    padding: 15px 26px;
+}
+.blog-date p span {
+    font-size: 15px;
+    font-weight: 600;
+}
+/* blog content*/
+.blog-content {
+    background: #0F0F0F;
+    padding: 23px 38px 33px 41px;
+}
+/* blog title*/
+.blog-title h3 a {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 12px 0 16px;
+    display: inline-block;
+    letter-spacing: -1px;
+    line-height: 32px;
+    transition: .5s;
+}
+.blog-title h3 a:hover {
+    color: #009E66;
+}
+/*meta blog*/
+
+.meta-blog span {
+    font-size: 16px;
+    color: #646464;
+    position: relative;
+}
+.meta-blog span:before {
+    opacity: 0.251;
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #777af2;
+    position: absolute;
+    top: 6px;
+    left: 140px;
+}
+span.meta-blog-date {
+    margin-right: 50px;
+    position: relative;
+}
+span.meta-blog-date:before {
+    margin: auto;
+    content: "";
+    left: 140px;
+    top: 6px;
+    opacity: 0.251;
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #777af2;
+}
+.meta-blog span i {
+    font-size: 16px;
+    color: #009e66;
+    margin-right: 12px;
+}
+/*blog btn*/
+.blog-btn a {
+    font-size: 16px;
+    color: #009e66;
+    font-weight: 500;
+    font-family: "Poppins";
+    display: inline-block;
+}
+.blog-btn a i {
+    font-size: 20px;
+    color: #009e66;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
+
+
+
+
+/*<!-- ============================================================== -->
+<!-- Cv Dreamhub contacta  Area Css -->
+<!-- ============================================================== -->*/
+.contact-area {
+    background: url(assets/images/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 96px 0 100px;
+}
+.row.contact_bg {
+    padding: 0 270px 0;
+}
+
+.form_box input {
+    width: 100%;
+    height: 44px;
+    background-color: rgba(255,255,255,0.100);
+    border: 1px solid #222222;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    outline: 0;
+    color: #fff;
+}
+.form_box input::placeholder {
+    opacity: 0.400;
+    color: #616161;
+}
+.form_box textarea {
+    width: 100%;
+    height: 207px;
+    background-color: rgba(255,255,255,0.100);
+    outline: 0;
+    color: #fff;
+    border: none;
+    padding: 22px 20px 0;
+}
+.form_box textarea::placeholder {
+    opacity: 0.400;
+    color: #616161;
+}
+/*contact form button*/
+.contact-form-button {
+    text-align: center;
+    margin: 44px 0 50px;
+}
+.contact-form-button button {
+    font-size: 18px;
+    color: #fff !important;
+    font-weight: 500;
+    font-family: "Oswald";
+    background: #fff;
+    padding: 16px 25px;
+    outline: 0;
+    border: none;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+    overflow: hidden;
+}
+.contact-form-button button:hover{
+    color: #009D66 !important;
+}
+.contact-form-button button::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #009E66;
+    z-index: -1;
+    transition: .5s;
+}
+.contact-form-button button:hover:before{
+    transform:rotateX(90deg);
+}
+.contact-form-button button::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #009E66;
+    z-index: -1;
+    transition: .5s;
+ }
+.contact-form-button button:hover:after{
+    transform:rotateY(90deg);
+}
+
+.contact-form-button button i {
+    margin-left: 9px;
+}
+/*contact single box*/
+.contact-single-box {
+    background: rgba(255,255,255,0.100);
+    text-align: center;
+    padding: 32px 0 13px;
+    position: relative;
+    
+}
+
+.contact-text h3 {
+    font-size: 18px;
+    color: #009e66;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+/*<!-- ============================================================== -->
+<!-- Cv Dreamhub Copy Right Area Css -->
+<!-- ============================================================== -->*/
+.copy-right-area {
+    border-top: 1px solid rgba(255,255,255,0.100);
+    background: #010101;
+    padding: 35px 0 38px;
+}
+.copy-widget-text p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Oswald";
+}
+.copy-widget-social {
+    text-align: right;
+}
+.copy-widget-social a {
+    display: inline-block;
+    margin: 0 5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.100);
+    line-height: 32px;
+    text-align: center;
+    color: #009E66;
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+}
+.copy-widget-social a:hover{
+    color: #fff;
+}
+.copy-widget-social a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #009E66;
+    border-radius: 4px;
+    z-index: -1;
+    transition: .5s;
+}
+.copy-widget-social a:hover:before {
+    width: 100%;
+}
+
+
+/*<!-- ============================================================== -->
+<!-- Cv dreamhub breadcumb Area Css -->
+<!-- ============================================================== -->*/
+.breadcumb-area {
+    background: url(assets/images/breadcumb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 180px 0 180px;
+}
+.breadcumb-title h1 {
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+.breadcumb-content-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+.breadcumb-content-menu ul li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.breadcumb-content-menu ul li a i {
+    margin: 0 10px 0;
+}
+.breadcumb-content-menu ul li span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #009E66;
+    font-family: 'Oswald';
+}
+/*<!-- ============================================================== -->
+<!-- Cv Dreamhub Service Details Area Css -->
+<!-- ============================================================== -->*/
+.service-detials-area {
+    padding: 120px 0 90px;
+    background: #0F0F0F;
+}
+/*widget search*/
+
+.widget_search {
+    padding: 30px 30px 30px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: #000000;
+    box-shadow: 0px 0px 70px rgb(0 0 0 / 5%);
+}
+
+.service-detials-area .widget_search {
+    background: #000000;
+    box-shadow: none;
+}
+
+.widget_search form {
+    position: relative;
+}
+
+.widget_search input {
+    border-radius: 4px;
+    padding-left: 20px;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    color: #0D0E14;
+    border: 0;
+    outline: 0;
+}
+
+button.icons {
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    padding: 1px 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60px;
+    width: 60px;
+    background: #009E66;
+    border-radius: 0 4px 4px 0;
+}
+
+/*widget categories box*/
+
+.service-detials-area .widget-categories-box {
+    background: #000000;
+    padding: 42px 40px 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: none;
+}
+
+.widget-categories-box {
+    background: #020202;
+    padding: 42px 40px 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 70px rgb(0 0 0 / 5%);
+}
+
+/*title*/
+
+.categories-title h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding: 0px 0 15px;
+    margin: 0 0 30px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.categories-title h4:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 24px;
+    width: 3px;
+    background: #009E66;
+}
+/*categories menu*/
+
+.widget-categories-menu ul {
+    display: block;
+}
+
+.widget-categories-menu ul li {
+    display: block;
+    list-style: none;
+    margin-bottom: 15px;
+    background: #0F0F0F;
+    padding: 16px 20px 16px;
+    border-radius: 4px;
+    transition: .5s;
+    border: 2px solid #009E66;
+    position: relative;
+    z-index: 1;
+}
+
+.widget-categories-menu ul li:hover {
+    border: 2px solid #009E66;
+}
+
+.widget-categories-menu ul li:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #009E66;
+    transition: .5s;
+    z-index: -1;
+}
+
+.widget-categories-menu ul li:hover:before{
+    width: 100%;
+}
+
+.widget-categories-menu ul li a {
+    display: block;
+    color: #009E66;
+    transition: .5s;
+}
+.widget-categories-menu ul li a span {
+    display: inline-block;
+    float: right;
+    background: #009E66;
+    height: 22px;
+    width: 22px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 6px;
+    color: #fff;
+    line-height: 22px;
+    transition: .5s;
+}
+
+.widget-categories-menu ul li:hover a span {
+    background: #fff;
+    color: #0E1317;
+}
+
+.widget-categories-menu ul li:hover a {
+    color: #fff;
+}
+
+.pdf-button a {
+    display: block;
+    background: #009E66;
+    padding: 15px 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.pdf-button a i {
+    float: right;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+/* Sidber Recent Post */
+
+.sidber-widget-recent-post {
+    margin-bottom: 20px;
+    background: #0F0F0F;
+    overflow: hidden;
+}
+
+.sidber-widget-recent-post .recent-widget-content {
+    padding-top: 20px;
+}
+.recent-widget-content a {
+    color: #fff !important;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    line-height: 26px;
+    transition: .5s;
+    margin-bottom: 7px;
+}
+.recent-widget-thumb {
+    float: left;
+    margin-right: 25px;
+}
+
+.sidber-widget-recent-post .recent-widget-content a {
+    color: #0E1317;
+    font-size: 18px;
+}
+
+.sidber-widget-recent-post .recent-widget-content span i {
+    margin-right: 7px;
+    color: #009E66;
+}
+
+/* Sidber Achivement CSS */
+
+.widget-achivement ul li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.widget-achivement ul li a i {
+    font-size: 17px;
+    margin-right: 3px;
+}
+
+.widget-achivement ul li a {
+    font-weight: 600;
+    transition: .5s;
+    color: #fff;
+}
+
+.widget-achivement ul li a span {
+    float: right;
+}
+
+.widget-achivement ul li a:hover{
+    color: #00af73;
+}
+
+/* Sidber Widget Gallery CSS */
+
+.widget-gallery {
+    overflow: hidden;
+}
+
+.widget-gallery-thumb {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sidber Widget Tags CSS */
+
+.widget-tags a {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 3px 20px;
+    margin: 4px 3px;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+}
+
+.widget-tags a:before {
+    position: absolute;
+    content: "";
+    left: -2px;
+    top: 0px;
+    height: 102%;
+    width: 0%;
+    background: #009E66;
+    z-index: -1;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.widget-tags a:hover{
+    color: #fff;
+    border-color: #009E66;
+}
+
+.widget-tags a:hover:before{
+    width: 102%;
+}
+
+/* Service Details Content CSS */
+
+.service-details-main-title {
+    padding: 20px 0 18px;
+}
+
+.service-details-main-title h1 {
+    font-size: 36px;
+}
+
+.service-details-video-thumb {
+    position: relative;
+    padding-top: 20px;
+}
+.video-icon {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    padding-top: 8px;
+}
+.video-icon a i {
+    height: 80px;
+    line-height: 80px;
+    width: 80px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #009E66;
+    text-align: center;
+    -webkit-animation: ripple-white 1s linear infinite;
+    animation: ripple-blue 1s linear infinite;
+} 
+@-webkit-keyframes ripple-blue {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(179, 120, 120, 0.3), 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3);
+        box-shadow: 0 0 0 0 rgba(41, 117, 161, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(28, 138, 114, 0.3)
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgba(38, 168, 151, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 10px rgba(25, 146, 116, 0.3), 0 0 0 20px rgba(26, 170, 163, 0.3), 0 0 0 30px rgba(37, 163, 163, 0)
+    }
+}
+
+@keyframes ripple-blue {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(20, 187, 179, 0.3), 0 0 0 10px rgba(25, 175, 118, 0.3), 0 0 0 20px rgba(43, 207, 153, 0.3);
+        box-shadow: 0 0 0 0 rgba(34, 197, 175, 0.3), 0 0 0 10px rgba(47, 199, 179, 0.3), 0 0 0 20px rgba(37, 179, 184, 0.3)
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgba(35, 190, 196, 0.3), 0 0 0 20px rgba(33, 163, 109, 0.3), 0 0 0 30px rgba(255,255,255, 0);
+        box-shadow: 0 0 0 10px rgba(22, 161, 150, 0.3), 0 0 0 20px rgba(24, 189, 167, 0.3), 0 0 0 30px rgba(37, 170, 141, 0)
+    }
+}
+
+
+.service-details-overview-title {
+    padding: 22px 0 15px;
+}
+
+.service-details-overview-title h2 {
+    font-size: 30px;
+}
+
+.service-details-overview-list ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+
+.service-details-overview-list ul li::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 9px;
+    height: 12px;
+    width: 12px;
+    background: #009E66;
+    border-radius: 50%;
+}
+
+.service-details-choose-us {
+    padding-bottom: 10px;
+}
+
+.service-details-choose-us-title {
+    padding: 5px 0 15px;
+}
+
+.service-details-choose-us-title h2 {
+    font-size: 30px;
+}
+
+.service-details-box {
+    background: #000000;
+    padding: 30px 30px 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.service-details-number {
+    position: absolute;
+    right: 60px;
+}
+
+.service-details-number h2 {
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    -webkit-text-stroke-color: rgba(255,255,255,0.2);
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Rubik";
+}
+
+.service-details-icon i {
+    font-size: 50px;
+    color: #009E66;
+}
+
+.service-details-content h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.service-details-thumb img {
+    width: 100%;
+}
+
+.service-details-video-thumb-inner img {
+    width: 100%;
+}
+
+
+
+
+/*
+<!-- ============================================================== -->
+<!-- Cv Dreamhub Portfolio Details Area Css -->
+<!-- ============================================================== -->*/
+
+.portfolio-detials-area {
+    padding: 95px 0 100px;
+    background: #0F0F0F;
+}
+.portfolio-details-main-title {
+    padding: 0 0 18px;
+}
+
+.portfolio-details-text {
+    padding-bottom: 1px;
+}
+
+.portfolio-details-overview-title {
+    padding: 22px 0 15px;
+}
+
+.portfolio-details-overview-title h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.portfolio-details-overview-list ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+
+.portfolio-details-overview-list ul li::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 9px;
+    height: 12px;
+    width: 12px;
+    background: #009E66;
+    border-radius: 50%;
+}
+
+.portfolio-details-thumb img {
+    width: 100%;
+}
+
+.portfolio-details-thumb {
+    margin-top: 20px;
+}
+
+.portfolio-details-clients-title {
+    padding-bottom: 10px;
+}
+
+.portfolio-details-clients-title h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+
+/***
+======================================================
+<--  CV Dreamhub Blog Details Area Css -->
+======================================================***/
+
+.blog-detials-area {
+    padding: 100px 0 100px;
+    background: #0F0F0F;
+}
+
+.blog-grid-area {
+    padding: 120px 0 90px;
+}
+
+.blog-details-main {
+    background: #020202;
+    padding: 30px;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.05);
+}
+.blog-details-meta {
+    background: #0F0F0F;
+    padding: 16px 30px;
+}
+
+.blog-details-meta span {
+    margin-right: 30px;
+}
+
+.blog-details-meta span i {
+    color: #009E66;
+    padding-right: 5px;
+}
+
+.blog-details-content {
+    padding: 20px 0 18px;
+}
+
+.blog-details-content h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.blog-details-thumb img {
+    width: 100%;
+}
+
+.blog-details-des {
+    padding: 30px 0 10px;
+}
+
+.blog-details-blockquote {
+    background: #0F0F0F;
+    padding: 40px 38px 26px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.blog-details-blockquote blockquote {
+    font-size: 18px;
+}
+
+.blog-details-video-thumb {
+    margin-top: 30px;
+    position: relative;
+}
+
+.blog-details-video-thumb img {
+    width: 100%;
+}
+
+.blog-details-video-thumb-inner img {
+    width: 100%;
+}
+
+.blog-details-content h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.blog-details-content-list p i {
+    font-size: 14px;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 31px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.blog-detials-area .blog-content {
+    padding: 20px 30px 38px;
+}
+
+.blog-details-button a {
+    display: inline-block;
+    border: 2px solid #009E66;
+    padding: 3px 20px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.blog-details-button a:before {
+    position: absolute;
+    content: "";
+    left: -2px;
+    top: -1px;
+    height: 104%;
+    width: 104%;
+    background: #009E66;
+    z-index: -1;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.blog-details-button a.active {
+    background: transparent;
+    transition: .5s;
+    margin-left: 10px;
+}
+
+.blog-details-button a.active:before{
+    background: transparent;
+}
+
+.blog-details-button a.active:hover:before{
+    background: #009E66;
+}
+
+.blog-details-button a.active:hover{
+    color: #fff;
+    border-color: #009E66;
+}
+
+.blog-details-social {
+    text-align: right;
+}
+
+.blog-details-social a {
+    display: inline-block;
+    border: 2px solid #009E66;
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 14px;
+    transition: .5s;
+    margin-left: 5px;
+}
+
+.blog-details-social a:hover{
+    background: #009E66;
+    border-color: #009E66;
+    color: #fff;
+}
+
+/* Blog Details Author */
+
+.blog-details-author {
+    border-top: 2px solid rgba(255,255,255,0.2);
+    padding-top: 40px;
+    margin-top: 32px;
+}
+
+.blog-details-author-inner {
+    background: #0F0F0F;
+    padding: 30px 30px 70px;
+}
+
+.blog-details-author-thumb {
+    float: left;
+    margin-right: 30px;
+}
+
+.blog-details-author-content h2 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Comment CSS */
+
+.blog-details-comment {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.blog-details-comment-thumb {
+    float: left;
+    margin-right: 30px;
+}
+
+.blog-details-comment-content {
+    overflow: hidden;
+}
+
+.blog-details-comment-content h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.blog-details-comment-content span {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.blog-details-comment-reply {
+    position: absolute;
+    right: 25px;
+}
+
+.blog-details-comment-reply a {
+    background: #009E66;
+    padding: 3px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.blog-details-comment.reply {
+    margin-left: 70px;
+    padding-top: 35px;
+    border-top: 2px solid rgba(255,255,255,0.2);
+}
+
+/* Blog Details Contact */
+
+.blog-details-contact {
+    border-top: 2px solid rgba(255,255,255,0.2);
+    margin: 12px 10px 10px;
+    padding-top: 8px;
+}
+/*input-box*/
+.input-box input {
+    width: 100%;
+    height: 44px;
+    background-color: rgba(255,255,255,0.100);
+    border: 1px solid #222222;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    outline: 0;
+    color: #fff;
+}
+.input-box textarea {
+    width: 100%;
+    height: 207px;
+    background-color: rgba(255,255,255,0.100);
+    outline: 0;
+    color: #fff;
+    border: none;
+    padding: 22px 20px 0;
+}
+/*input button*/
+.input-button {
+    margin-top: 27px;
+}
+.input-button button {
+    display: inline-block;
+    padding: 14px 40px;
+    outline: 0;
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    background: #009E66;
+}
+.input-button button i {
+    margin-left: 10px;
+}
+
+
+/*
+<!-- ============================================================== -->
+<!-- CV Dreamhub Scrollup Section -->
+<!-- ============================================================== -->*/
+
+.scroll-area{
+  position: relative;
+  z-index: 999;
+ }
+
+.scroll-area .go-top {
+    position: fixed;
+    cursor: pointer;
+    top: 0;
+    right: 30px;
+    color: #ffffff;
+    background-image: -moz-linear-gradient(0deg, #437463 0%, #009E66 100%);
+    background-image: -webkit-linear-gradient(0deg, #437463 0%, #009E66 100%);
+    z-index: 9999;
+    width: 45px;
+    text-align: center;
+    height: 45px;
+    line-height: 42px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.9s ease-out 0s;
+    -moz-transition: all 0.9s ease-out 0s;
+    border-radius: 10px; 
+}
+
+.scroll-area .go-top i {
+      position: absolute;
+      top: 50%;
+      left: -4px;
+      right: 0;
+      margin: 0 auto;
+      font-size: 15px;
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: all 0.5s ease-out 0s;
+      -moz-transition: all 0.5s ease-out 0s;
+  }
+
+.scroll-area .go-top i:last-child {
+    opacity: 0;
+    visibility: hidden;
+    top: 60%; 
+}
+
+.scroll-area .go-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(to right, #00132b 0%, #00132b 100%);
+    background-image: -ms-linear-gradient(0deg, #4f7266 0%, #17c98a 100%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;;
+    border-radius: 100%;
+}
+
+.scroll-area .go-top:focus, .scroll-area .go-top:hover {
+      color: #fff; 
+  }
+
+.scroll-area .go-top:focus::before, .scroll-area .go-top:hover::before {
+        opacity: 1;
+        visibility: visible; 
+}
+
+.scroll-area .go-top:focus i:first-child, .scroll-area .go-top:hover i:first-child {
+        opacity: 0;
+        top: 0;
+        visibility: hidden;
+ }
+
+.scroll-area .go-top:focus i:last-child, .scroll-area .go-top:hover i:last-child {
+        opacity: 1;
+        visibility: visible;
+        top: 50%; 
+}
+
+.scroll-area .go-top.active {
+    top: 95%;
+    -webkit-transform: translateY(-98%);
+    -moz-transform: translateY(-98%);
+    opacity: 1;
+    visibility: visible;
+    border-radius: 0;
+    right: 30px;
+    border-radius:100%;
+}
+
+.top-wrap {
+  position: relative; 
+}
+
+.top-wrap .go-top-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    top: 3px;
+    z-index: 1;
+    background: #2ea77c;
+}
+
+ .top-wrap .go-top-button i {
+      font-size: 20px;
+      font-weight: 700;
+      padding-left: 4px;
+      color: #fff;
+ }
+
+.top-wrap .go-top-button::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 45px;
+    height: 45px;
+    -webkit-animation: ripple 1.6s ease-out infinite;
+    -moz-animation: ripple 1.6s ease-out infinite;
+    opacity: 0;
+    background-image: -moz-linear-gradient(0deg, #2ea77c 0%, #2ea77c 100%);
+    background-image: -webkit-linear-gradient(0deg, #2ea77c 0%, #2ea77c 100%);
+    border-radius: 100%;
+}
+
+.top-wrap .go-top-button:hover {
+      background-color: #222;
+      color: #fff; 
+  }
+  
+.scroll-area.home-two .top-wrap .go-top-button {
+    background: #00AFF5;
+}
+ .scroll-area.home-two .top-wrap .go-top-button::after {
+    background-image: -moz-linear-gradient(0deg, #00AFF5 0%, #00AFF5 100%);
+    background-image: -webkit-linear-gradient(0deg, #00AFF5 0%, #00AFF5 100%);
+}
+
+@keyframes ripple {
+  0%, 35% {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0.8; }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2); } }
+
+
+
+/*===========================
+<-- Cv Dreamhub Loader Css -->
+=============================*/
+
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.8s 1s ease;
+    z-index: 666;
+}
+
+.loader {
+  position: relative;
+  display: block;
+  z-index: 201;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  border-radius: 50%;
+  transition: all 1s 1s ease;
+  border: 3px solid transparent;
+  border-top-color: #2ea77c;
+  -webkit-animation: spin 1.5s linear infinite;
+  -moz-animation: spin 1.5s linear infinite;
+  -o-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+.loader:before {
+  position: absolute;
+  content: '';
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-left-color: #2ea77c;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  -o-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.loader:after {
+  position: absolute;
+  content: '';
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-right-color: #fff;
+  -webkit-animation: spin 2.5s linear infinite;
+  -moz-animation: spin 2.5s linear infinite;
+  -o-animation: spin 2.5s linear infinite;
+  animation: spin 2.5s linear infinite;
+}
+
+/*/ Here comes the Magic /*/
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper .loder-section {
+    position: fixed;
+    top: 0;
+    width: 52%;
+    height: 100%;
+    background: #111;
+    z-index: 2;
+}
+
+.loader-wrapper .loder-section.left-section {
+  left: 0;
+  transition: 1s 1.4s ease;
+}
+
+.loader-wrapper .loder-section.right-section {
+  right: 0;
+  transition: 1s 1.4s ease;
+}
+
+/*/ When page loaded /*/
+.loaded .loder-section.left-section {
+  left: -100%;
+}
+
+.loaded .loder-section.right-section {
+  right: -100%;
+}
+
+.loaded .loader-wrapper {
+  visibility: hidden;
+}
+
+.loaded .loader {
+  top: -100%;
+  opacity: 0;
+}
+
+
+/* HealthBoost logo card: transparent logo centered on soft background, no zoom */
+.case-study-thumb.logo-thumb {
+    background: #f9eef3;
+    aspect-ratio: 900 / 640;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.case-study-thumb.logo-thumb a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.case-study-thumb.logo-thumb img {
+    width: auto;
+    height: 72%;
+    max-width: 80%;
+    transform: scale(1);
+}
+.case-study-single-box:hover .case-study-thumb.logo-thumb img {
+    transform: scale(1.06);
+}
